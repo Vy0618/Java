@@ -24,12 +24,16 @@ public class desafio2
 
         }
         while (tentativas <=5){
-            System.out.println("Adivinhe o número. Insira-o abaixo:");
+            System.out.println("Insira o número que acredita ser o correto:");
             suposicao = ler.nextInt();
+
             if (suposicao != randomNum) {
-                System.out.println("Tente novamente!");
                 tentativas++;
 
+                if (suposicao > randomNum)
+                    System.out.println("Você está procurando um número menor que esse. \nTente novamente.");
+                else
+                    System.out.println("Você está procurando um número maior que esse. \nTente novamente.");
 
             } else if (suposicao == randomNum){
                 System.out.println("Temos um vencedor!");
@@ -38,7 +42,10 @@ public class desafio2
             }
 
         }
-        System.out.println("Não foi dessa vez.");
+
+        System.out.println("Fim de Jogo.");
+
+
 
     }
 }
