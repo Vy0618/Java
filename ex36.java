@@ -29,7 +29,6 @@ public class ex36 {
 
                         dinheirof = dinheirobase + vvariavel;
                         dinheirobase = dinheirof ;
-                        System.out.println(dinheirobase);
                         break;
 
                 case 3:
