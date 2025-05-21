@@ -82,12 +82,11 @@ public class Banco {
                     }
                 case 3:
                     System.out.println("PROGRAMA ENCERRADO.");
+                    vwhile = false;
                     break;
 
 
             }
-            vwhile = false;
-
         }
 
     }
