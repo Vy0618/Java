@@ -32,7 +32,7 @@ public class Main {
             System.out.println();
         }
 
-        while(vitoria == false || contador != 8){
+        while(vitoria == false){
             System.out.println("Tabuleiro: ");
 
             System.out.println("qual linha deseja preencher jogador x");
