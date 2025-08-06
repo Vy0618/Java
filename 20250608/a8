@@ -1,25 +1,25 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ex08 {
+public class ex {
     public static void main(String[] args) {
         ArrayList<Double> cost = new ArrayList<>();
         ArrayList<String> name = new ArrayList<>();
-        Scanner read = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         String option;
         do{
-            System.out.println("Por favor informe o nome do produto:");
-            String names = read.nextLine().toLowerCase();
+            System.out.println("Entre com  o nome do produto:");
+            String names = scan.nextLine().toLowerCase();
             name.add(names);
 
-            System.out.println("Agora informe o preço do produto:");
-            double preco = read.nextDouble();
+            System.out.println("Entre com o valor do produto:");
+            double preco = scan.nextDouble();
             cost.add(preco);
 
-            read.nextLine();
+            scan.nextLine();
 
             System.out.println("Deseja continuar a compra");
-            option = read.nextLine().toLowerCase();
+            option = scan.nextLine().toLowerCase();
         } while(option.equals("sim"));
 
 
